@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="743.0" style="-fx-background-color: #2f3640; -fx-text-fill: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.ui.main.homeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <right>
+            <VBox prefHeight="400.0" prefWidth="130.0" style="-fx-background-color: #dfe6e9;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton contentDisplay="TOP" onAction="#loadAddMember" prefHeight="150.0" prefWidth="144.0" text="Add Member">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/group.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#loadAddBook" prefHeight="150.0" prefWidth="144.0" text="Add Book">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/bookshelf.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="96.0" onAction="#loadMemberList" prefHeight="150.0" prefWidth="144.0" text="View Member">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/find-my-friend.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="181.0" onAction="#loadBookList" prefHeight="150.0" prefWidth="144.0" text="View Books">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/find-on-page.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="267.0" prefHeight="150.0" prefWidth="144.0" text="Settings">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <JFXTabPane style="-fx-background-color: #2f3640;" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Book Issue">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="484.0" prefWidth="613.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="195.0" prefWidth="614.0">
+                                       <children>
+                                          <JFXTextField focusColor="#feff00" labelFloat="true" promptText="Enter Book ID" style="-fx-text-fill: white;" stylesheets="@style.css" unFocusColor="#8e8e8e" />
+                                          <VBox alignment="CENTER" prefHeight="107.0" prefWidth="400.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="50.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" />
+                                                <Text fill="WHITE" layoutX="179.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="195.0" prefWidth="614.0">
+                                       <children>
+                                          <JFXTextField focusColor="#feff00" labelFloat="true" promptText="Enter Member ID" style="-fx-text-fill: white;" stylesheets="@style.css" unFocusColor="#8e8e8e" />
+                                          <VBox alignment="CENTER" prefHeight="107.0" prefWidth="400.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="50.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name" />
+                                                <Text fill="WHITE" layoutX="179.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #353b48;" text="ISSUE" textFill="#f2ff00" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Renew / Submission">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="484.0" prefWidth="613.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <JFXTextField alignment="CENTER" focusColor="#feff00" prefHeight="42.0" prefWidth="414.0" promptText="Enter Book ID" style="-fx-text-fill: white;" stylesheets="@style.css" unFocusColor="#8e8e8e" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="100.0" right="100.0" top="10.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </top>
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #353b48;" text="Renew" textFill="#f2ff00">
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton layoutX="279.0" layoutY="43.0" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #353b48;" text="Submission" textFill="#f2ff00">
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                                 <center>
+                                    <ListView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2f3640;" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </ListView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs></JFXTabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

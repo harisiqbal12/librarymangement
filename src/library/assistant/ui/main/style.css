@@ -1,0 +1,40 @@
+.text-field{
+    -fx-prompt-text-fill: gray;
+}
+
+.jfx-tab-pane:top .depth-container .tab-header-area .headers-region .tab-selected-line {
+    -fx-background-color: #f2ff00;
+}
+.jfx-tab-pane .headers-region {
+    -fx-background-color:  #2f3640;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #2f3640;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #75bc1b;
+    -fx-stroke-width: 3pt;
+}
+.list-view .list-cell:even {
+-fx-background-color:  #353b48;
+-fx-text-fill: #f2ff00;
+}
+.list-view .list-cell:odd {
+-fx-background-color:  #2f3640;
+-fx-text-fill: white;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-background-color:#2f3640;
+}
+
+.list-view .increment-button ,.list-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #f2ff00;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
+}
